@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            background-color: #f9f9f949;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        section h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        .image img {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+    </style>
+    <script>
+        // Function to show a message when the form is submitted
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert("Thank you for submitting the form!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>That One Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Welcome to our website!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lacinia lacus. Curabitur ultrices blandit ante, sit amet varius velit convallis vitae.</p>
+        <div class="image">
+            <img src="https://m.media-amazon.com/images/I/61AjmKEiOdL.jpg" alt="Car Image 1">
+        </div>
+        <p>Quisque sed est sed turpis finibus congue. Aenean varius est eget ipsum facilisis, eget pellentesque libero tincidunt.</p>
+        <div class="image">
+            <img src="https://p.turbosquid.com/ts-thumb/g1/jlKbYd/wlj1krgW/vector_w8_0000/jpg/1524241311/1920x1080/fit_q87/a84060d0d6a20808ac96446e29fe4e674c065a07/vector_w8_0000.jpg" alt="Car Image 2" width="800px" height="80%">
+        </div>
+        <p>Donec nec interdum nibh, eget tincidunt urna. Morbi eleifend, lacus sed vestibulum faucibus, tellus justo porta ligula, eu finibus nisi metus sed odio.</p>
+        
+        <a href="#" class="button">Learn More</a>
+
+        <h2>Contact Us</h2>
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="button">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
