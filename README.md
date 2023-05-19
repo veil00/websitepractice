@@ -1,2 +1,2 @@
 # websitepractice
-making websites, yo
+making websites and making them look nicer
