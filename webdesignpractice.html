@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Totally Real Company</title>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <style>
+          #particles-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Set the z-index to -1 to place it behind the content */
+          }
+          
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          }
+          
+          h1 {
+            font-size: 36px;
+          }
+          
+          .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px;
+            position: relative;
+          }
+          
+          .header {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+          
+          .section {
+            margin-bottom: 60px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            transition: box-shadow 0.3s ease;
+          }
+          
+          .section:hover {
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+          }
+          
+          .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #00ffff;
+            background-color: #000;
+            padding: 10px;
+          }
+          
+          .section-content {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 20px;
+          }
+          
+          .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #00ffff;
+            color: #00ffff;
+          }
+        </style>
+        <script>
+          /* JavaScript to initialize particles.js and handle click events */
+          document.addEventListener('DOMContentLoaded', function () {
+            particlesJS('particles-container', {
+              particles: {
+                number: {
+                  value: 100, // Adjust the number of particles
+                  density: {
+                    enable: true,
+                    value_area: 800
+                  }
+                },
+                color: {
+                  value: ['#00FFFF', '#FFA500'] // Customize the colors
+                },
+                shape: {
+                  type: 'circle' // Adjust the particle shape (e.g., 'circle', 'triangle', 'polygon')
+                },
+                opacity: {
+                  value: 0.4, // Adjust the opacity of the particles
+                  random: true,
+                  anim: {
+                    enable: false
+                  }
+                },
+                size: {
+                  value: 2, // Adjust the size of the particles
+                  random: true,
+                  anim: {
+                    enable: false
+                  }
+                },
+                move: {
+                  enable: true,
+                  speed: 0.5, // Adjust the speed of the particles
+                  direction: 'none',
+                  random: false,
+                  straight: false,
+                  out_mode: 'out',
+                  bounce: false,
+                  attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200
+                  }
+                }
+              },
+              interactivity: {
+                detect_on: 'canvas',
+                events: {
+                  onhover: {
+                    enable: false
+                  },
+                  onclick: {
+                    enable: true,
+                    mode: 'push' // Change the interaction mode ('push', 'remove', 'bubble')
+                  },
+                  resize: true
+                },
+                modes: {
+                  push: {
+                    particles_nb: 4 // Adjust the number of particles on click
+                  }
+                }
+              },
+              retina_detect: true
+            });
+          });
+        </script>
+      </head>
+<body>
+        
+    <div class="container"><div id="particles-container">
+
+    <header class="header">
+      <h1>A Totally Real Company</h1>
+    </header>
+    
+    <section class="section">
+      <h2 class="section-title">Section 1</h2>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit turpis nec vulputate vulputate. Morbi viverra sed nulla in placerat. Integer luctus venenatis risus, eget lacinia augue blandit non. Donec sed nisl placerat, tempor ante ac, porttitor elit. Cras varius justo sapien, nec mattis dui luctus et. Proin quis dolor eleifend, volutpat mauris vitae, tincidunt dolor. Fusce ut enim luctus tortor vestibulum ultricies. Maecenas semper tincidunt urna. Nulla turpis arcu, malesuada gravida nulla et, finibus auctor risus. Donec interdum, sem in consequat suscipit, elit nibh ullamcorper leo, nec finibus dolor leo eget erat. Quisque pellentesque dolor nibh, sit amet luctus augue sodales nec. Aenean mollis velit in diam ultricies, ac eleifend nisi tristique. Nunc pretium lectus quis luctus luctus. In eleifend metus et nisl congue, a sollicitudin ipsum ornare. Curabitur gravida malesuada lectus at egestas.
+
+            Duis ornare felis eu sodales condimentum. Nunc vulputate tincidunt maximus. Nam in vehicula tellus. Sed interdum molestie dignissim. Suspendisse facilisis condimentum imperdiet. Nulla purus eros, rhoncus ac hendrerit quis, molestie eu ligula. Nam laoreet urna id dictum tristique.</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">Section 2</h2>
+      <div class="section-content">
+        <p>Vestibulum consectetur, ipsum at pretium venenatis, dolor lectus auctor urna, quis posuere augue metus ut mi. Sed congue interdum blandit. Maecenas risus nunc, porttitor vel dictum vitae, venenatis id enim. Donec blandit ipsum est. Mauris aliquam id leo eget sagittis. Ut quis lorem id lacus commodo rutrum. Proin aliquam pretium dictum. Curabitur velit orci, cursus vitae dignissim nec, suscipit ac metus. Aenean tempus elit leo, vel mollis tortor venenatis et. Proin et feugiat ipsum. In ut volutpat dolor.</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">Section 3</h2>
+      <div class="section-content">
+        <p>Aliquam blandit dolor nisi, quis rutrum neque placerat vel. Fusce congue a lorem ut iaculis. Cras vulputate vel ante non mollis. Sed a dapibus libero. Nam ut est sit amet tortor facilisis luctus. Nullam lacus quam, posuere ullamcorper tristique id, dapibus sed odio. Integer tellus felis, mollis ac efficitur vitae, sodales eu augue. In eleifend urna vitae ultricies luctus.
+
+            Etiam laoreet urna mi, ut eleifend turpis fringilla quis. Donec vitae urna eu dolor fermentum sagittis. Suspendisse vel diam sem. Nam non orci in velit efficitur iaculis. Morbi sed urna ultrices, semper sem quis, ornare tellus. Nulla id imperdiet nisl, placerat egestas ante. Aliquam ac nunc luctus, rhoncus orci in, sollicitudin ipsum. Etiam congue pellentesque turpis a egestas. Nullam velit ipsum, hendrerit tincidunt dignissim nec, ultrices eget ipsum. Mauris consequat vel ante at suscipit. Quisque lobortis laoreet fringilla.</p>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      &copy; A Totally Real Company. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
